@@ -1,0 +1,54 @@
+@font-face {
+  font-family: cardo;
+  src: url("../fonts/Cardo-Regular.ttf");
+}
+@font-face {
+  font-family: cardo-bold;
+  src: url("../fonts/Cardo-Bold.ttf");
+}
+.container {
+  width: 820px;
+  height: 480px;
+  background: linear-gradient(
+    0deg,
+    hsla(0, 68%, 77%, 1) 0%,
+    hsla(307, 100%, 66%, 1) 100%
+  );
+  font-family: cardo;
+}
+.tab-item {
+  background-color: black;
+  width: 100px;
+  height: 50px;
+  padding-top: 13px;
+  border-right: 1px solid white;
+  cursor: pointer;
+}
+.tab-item:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.264);
+  font-family: cardo-bold;
+  transition: all 0.3s;
+}
+.tab-row :last-child {
+  border-right: none;
+  border-radius: 0 0 20px 0;
+}
+.tab-row :first-child {
+  border-radius: 0 0 0 20px;
+}
+.tab-text {
+  border-radius: 5px;
+}
+.tab-item:active {
+  background-color: white;
+}
+.active {
+  background-color: white;
+  height: 65px;
+  color: black;
+  border-radius: 0 0 0 0 !important;
+}
+ul {
+  margin: 0;
+}
