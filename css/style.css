@@ -6,13 +6,17 @@
   font-family: cardo-bold;
   src: url("../fonts/Cardo-Bold.ttf");
 }
+body{
+  background: rgb(250, 249, 249);
+  background: radial-gradient(circle, rgb(222, 195, 207) 0%, rgb(65, 68, 72) 61%);
+}
 .container {
   width: 820px;
   height: 480px;
   background: linear-gradient(
     0deg,
-    hsla(0, 68%, 77%, 1) 0%,
-    hsla(307, 100%, 66%, 1) 100%
+    rgb(11, 1, 1) 0%,
+    rgb(68, 65, 68) 100%
   );
   font-family: cardo;
 }
@@ -26,7 +30,7 @@
 }
 .tab-item:hover {
   color: black;
-  background-color: rgba(255, 255, 255, 0.264);
+  background-color: rgb(255, 255, 255);
   font-family: cardo-bold;
   transition: all 0.3s;
 }
@@ -44,11 +48,36 @@
   background-color: white;
 }
 .active {
-  background-color: white;
+  background-color: black;
   height: 65px;
-  color: black;
+  color: white;
+  border-top: 5px solid black;
   border-radius: 0 0 0 0 !important;
 }
 ul {
   margin: 0;
+}
+.active-tab{
+  border-bottom: 5px solid black;
+}
+.tab-text{
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.366);
+  background-blend-mode:darken;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+.tab-text-1{
+  background-image:url('../images/malcom-1.jpg');
+  background-size: cover;
+  background-position: center;
+}.tab-text-2{
+  background-image:url('../images/malcom-2.jpg');
+}.tab-text-3{
+  background-image:url('../images/malcom-3.jpg');
+}.tab-text-4{
+  background-image:url('../images/malcom-4.jpg');
+}.tab-text-5{
+  background-image:url('../images/malcom-5.jpg');
 }
